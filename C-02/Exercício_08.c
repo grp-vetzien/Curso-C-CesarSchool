@@ -6,19 +6,23 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 *******************************************************************************/
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-    float fah, cel;
+    int n1, n2, maior;
     
-    printf("Digite a temperatura em F: ");
-    scanf("%f", &fah);
+    printf("Digite o número: ");
+    scanf("%d", &n1);
+    printf("Digite o outro: ");
+    scanf("%d", &n2);
     
-    cel = 5*((fah-32)/9);
-    
-    printf("A temperatura em Celsius é: %.2f graus", cel);
+    if(n1 > n2){
+        printf("%d é o maior", n1);
+    }else if (n1 < n2){
+        printf("%d é o maior", n2);
+    }
+
 
     return 0;
 }
-

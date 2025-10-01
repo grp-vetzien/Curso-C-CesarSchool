@@ -10,13 +10,15 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 int main()
 {
-    char nome[50];
-    int x=1, y=2, z=3;
+    int num;
+    printf("Digite o número: ");
+    scanf("%d", &num);
+    if (num % 2 == 0){
+        printf("%d eh par!", num); //& capta o valor
+    }else{
+        printf("%d eh impar", num);
+    }
     
-    printf("Entre com seu nome: ");
-    scanf("%s", nome);
-    
-    printf("O nome informado foi: %s %d %d %d", nome, x, y, z);
 
     return 0;
 }
